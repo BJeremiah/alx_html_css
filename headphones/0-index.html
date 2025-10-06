@@ -1,44 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Headphones</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones</title>
+    <link rel="stylesheet" href="0-styles.css">
+    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo_headphone.png" alt="Headphones logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#what">what we do</a></li>
+                <li><a href="#results">our results</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <img src="images/headphone_logo.png" alt="Headphones Logo" class="logo">
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+            <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+            <button class="cta-btn">CALL TO ACTION</button>
+            <p class="hero-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
 
-      <nav class="nav">
-        <a href="#">what we do</a>
-        <a href="#">our results</a>
-        <a href="#">contact us</a>
-      </nav>
-    </div>
-  </header>
+    <!-- WHAT WE DO -->
+    <section id="what" class="what">
+        <h2>What we do...</h2>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="icons-container">
+            <div class="icon-box">
+                <img src="images/icon_sound.png" alt="sound icon">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="icon-box">
+                <img src="images/icon_film.png" alt="film icon">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="icon-box">
+                <img src="images/icon_music.png" alt="music icon">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="icon-box">
+                <img src="images/icon_ear.png" alt="ear icon">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay"></div>
+    <!-- RESULTS -->
+    <section id="results" class="results">
+        <h2>Our results speak for themselves</h2>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="results-container">
+            <div class="result-box"><span>+2%</span><p>Lorem ipsum dolor</p></div>
+            <div class="result-box"><span>+2%</span><p>Lorem ipsum dolor</p></div>
+            <div class="result-box"><span>+2%</span><p>Lorem ipsum dolor</p></div>
+            <div class="result-box"><span>+2%</span><p>Lorem ipsum dolor</p></div>
+        </div>
+    </section>
 
-    <div class="hero-content">
-      <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-      <p class="tagline">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2>Contact us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your message"></textarea>
+            <button class="cta-btn">CALL TO ACTION</button>
+        </form>
+    </section>
 
-      <a href="#" class="cta-btn">CALL TO ACTION</a>
-
-      <p class="hero-desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      </p>
-    </div>
-  </section>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Headphones logo">
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+        <p>&copy;headphones 2020</p>
+    </footer>
 </body>
 </html>
