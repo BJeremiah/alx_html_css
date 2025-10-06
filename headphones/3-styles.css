@@ -1,0 +1,487 @@
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: lowercase;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff5c5c;
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+  background-image: url("images/headphones_hero_1.jpg"); /* EDIT HERE */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+/* Overlay gradient for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.hero-desc {
+  font-size: 12px;
+  margin-top: 25px;
+  color: #ddd;
+  line-height: 1.8;
+}
+
+.cta-btn {
+  background: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ff2e2e;
+}
+
+/* ====== WHAT WE DO ====== */
+.what {
+  padding: 80px 60px;
+  text-align: center;
+  background: #fff;
+}
+
+.what h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.section-desc {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 14px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  width: 180px;
+}
+
+.icon-box img {
+  width: 50px; /* EDIT ICON SIZE */
+  margin-bottom: 15px;
+}
+
+.icon-box h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.icon-box p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ====== RESULTS SECTION ====== */
+.results {
+  background-image: url("images/headphones_hero_2.jpg"); /* EDIT HERE */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.results h2,
+.results p,
+.results-container {
+  position: relative;
+}
+
+.results h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.results .section-desc {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.result-box {
+  background: #ff5c5c;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.result-box span {
+  font-size: 20px;
+}
+
+.result-box p {
+  font-size: 10px;
+}
+
+/* ====== CONTACT SECTION ====== */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.contact h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+form textarea {
+  resize: none;
+  height: 80px;
+}
+
+form .cta-btn {
+  align-self: center;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background: #0c1b2e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ff5c5c;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #ccc;
+}
+/* ===== WHAT WE DO SECTION ===== */
+.what {
+  background: #fff;
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.what h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.section-desc {
+  color: #555;
+  font-size: 14px;
+  max-width: 650px;
+  margin: 0 auto 60px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.icon-box {
+  width: 180px;
+}
+
+.icon-box span {
+  display: inline-block;
+  font-size: 40px;
+  color: #ff5c5c;
+  margin-bottom: 15px;
+}
+
+.icon-box h3 {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 13px;
+  color: #666;
+}
+/* ===== OUR RESULTS SECTION ===== */
+.results {
+  background-image: url("images/results_bg.jpg"); /* 👈 EDIT this filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.results::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.results h2,
+.results p,
+.results-container {
+  position: relative;
+}
+
+.results h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.results .section-desc {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Container for result items */
+.results-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Diamond-shaped result boxes */
+.result-box {
+  background: #ff5c5c;
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.result-box span {
+  font-size: 20px;
+}
+
+.result-box p {
+  font-size: 10px;
+}
+
+/* Hover effect */
+.result-box:hover {
+  transform: scale(1.1);
+}
+/* ===== CONTACT US SECTION ===== */
+.contact {
+  background: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+  background: transparent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff5c5c;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Reuse the red button style */
+.contact-form .cta-btn {
+  background: #ff5c5c;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form .cta-btn:hover {
+  background: #ff2e2e;
+  transform: translateY(-2px);
+}
+
+/* === Simple fade-up animation for form === */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-form {
+  animation: fadeUp 1s ease-in-out;
+}
